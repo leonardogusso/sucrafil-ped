@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO e Meta Tags Otimizadas -->
+  <title>Sucrafilm Suspensão - Sucralfato Pediátrico | Proteção Mucosa Universal</title>
+  <meta name="description" content="Sucrafilm: sucralfato em suspensão para refluxo faringolaríngeo, sintomas aerodigestivos e proteção mucosa em crianças. Evidências científicas e guia de uso." />
+  <meta name="keywords" content="sucrafilm, sucralfato pediátrico, refluxo faringolaríngeo, RFL, nervo vago, sintomas aerodigestivos, protetor mucosa, EMS" />
+  <meta name="author" content="EMS S/A - Sucrafilm" />
+  <link rel="canonical" href="https://sucrafilm.vercel.app/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://sucrafilm.vercel.app/" />
+  <meta property="og:title" content="Sucrafilm Suspensão - Sucralfato Pediátrico" />
+  <meta property="og:description" content="Evidências científicas e diretrizes para o uso de sucralfato em condições aerodigestivas pediátricas." />
+  <meta property="og:image" content="https://sucrafilm.vercel.app/images/sucrafilm-social.jpg" />
+  <meta property="og:site_name" content="Sucrafilm Suspensão" />
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://sucrafilm.vercel.app/" />
+  <meta name="twitter:title" content="Sucrafilm Suspensão - Sucralfato Pediátrico" />
+  <meta name="twitter:description" content="Proteção mucosa universal com base científica robusta" />
+  <meta name="twitter:image" content="https://sucrafilm.vercel.app/images/sucrafilm-social.jpg" />
+  
+  <!-- PWA e Ícones -->
+  <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png" />
+  <link rel="manifest" href="/manifest.json" />
+  <meta name="theme-color" content="#2563eb" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Sucrafilm" />
+  
+  <!-- Preload das fontes críticas -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" as="style" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  
+  <!-- Google Analytics 4 - SUBSTITUA G-XXXXXXXXXX pelo seu ID real -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', {
+      page_title: 'Sucrafilm - Plataforma Médica',
+      custom_map: {
+        'custom_parameter_1': 'medical_content_engagement',
+        'custom_parameter_2': 'brand_education'
+      }
+    });
+    
+    // Detecta origem via QR Code
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('qr') === '1' || !document.referrer) {
+      gtag('event', 'qr_code_access', {
+        event_category: 'Brand Engagement',
+        event_label: 'Doctor accessed via QR Code - Sucrafilm'
+      });
+    }
+  </script>
+</head>
+<body>
+  <!-- Fallback para JavaScript desabilitado -->
+  <noscript>
+    <div style="padding: 20px; background: #fee2e2; border: 1px solid #fca5a5; margin: 20px; border-radius: 8px;">
+      <h2 style="color: #dc2626; margin: 0 0 10px 0;">JavaScript Necessário</h2>
+      <p style="margin: 0; color: #7f1d1d;">
+        Esta plataforma médica requer JavaScript habilitado para funcionar corretamente. 
+        Por favor, habilite JavaScript em seu navegador e recarregue a página.
+      </p>
+    </div>
+  </noscript>
+  
+  <!-- Container principal da aplicação -->
+  <div id="root"></div>
+  
+  <!-- Script principal da aplicação -->
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
